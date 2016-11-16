@@ -14,9 +14,9 @@ namespace NPercept.Language
 
 		protected Dictionary<long, Word> m_words;
 
-		public LinkedList<Word> Words {
+		public Dictionary<long, Word> Words {
 			get {
-				return m_words.Values;
+				return m_words;
 			}
 		}
 
