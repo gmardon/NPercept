@@ -12,6 +12,9 @@ namespace NPercept.App
 		{
 			List<string> documents_list = new List<string>();
 			List<string> words_list = new List<string>();
+			DenseMatrix<int> words_relations = new DenseMatrix<int> (1);
+			
+
 			string text = System.IO.File.ReadAllText(@"hugo_les_miserables.txt");
 			string[] sentences = text.Split ('.');
 			string[] words;
@@ -25,12 +28,13 @@ namespace NPercept.App
 					if (!words_list.Contains (word)) {
 						words_list.Add (word.Replace(',', '\0').Trim ());
 					}
+					words_relations.
 				}
 				index++;
 				word_total += words.Length;
 			}
 
-			//Matrix<int> words_relations;
+			//
 		}
 	}
 }
