@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPercept.App", "NPercept.App\NPercept.App.csproj", "{7888610E-2403-4F45-B971-1864291E5361}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPercept.Core", "NPercept.Core\NPercept.Core.csproj", "{9D88604C-6E33-4A77-AC4E-0326FC4771FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7888610E-2403-4F45-B971-1864291E5361}.Debug|x86.ActiveCfg = Debug|x86
+		{7888610E-2403-4F45-B971-1864291E5361}.Debug|x86.Build.0 = Debug|x86
+		{7888610E-2403-4F45-B971-1864291E5361}.Release|x86.ActiveCfg = Release|x86
+		{7888610E-2403-4F45-B971-1864291E5361}.Release|x86.Build.0 = Release|x86
+		{9D88604C-6E33-4A77-AC4E-0326FC4771FB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9D88604C-6E33-4A77-AC4E-0326FC4771FB}.Debug|x86.Build.0 = Debug|Any CPU
+		{9D88604C-6E33-4A77-AC4E-0326FC4771FB}.Release|x86.ActiveCfg = Release|Any CPU
+		{9D88604C-6E33-4A77-AC4E-0326FC4771FB}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

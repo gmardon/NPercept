@@ -1,0 +1,5 @@
+/home/gmardon/Projects/NPercept/NPercept.Core/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/gmardon/Projects/NPercept/NPercept.Core/bin/Debug/NPercept.Core.dll.mdb
+/home/gmardon/Projects/NPercept/NPercept.Core/bin/Debug/NPercept.Core.dll
+/home/gmardon/Projects/NPercept/NPercept.Core/obj/Debug/NPercept.Core.dll
+/home/gmardon/Projects/NPercept/NPercept.Core/obj/Debug/NPercept.Core.dll.mdb
