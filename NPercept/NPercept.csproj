@@ -61,6 +61,8 @@
     <Compile Include="NPercept\Language\Languages.cs" />
     <Compile Include="NPercept\Language\French\FrenchStemmer.cs" />
     <Compile Include="NPercept\Language\English\EnglishStemmer.cs" />
+    <Compile Include="NPercept\Language\WordSeparationMode.cs" />
+    <Compile Include="NPercept\Language\TextSeparationMode.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
