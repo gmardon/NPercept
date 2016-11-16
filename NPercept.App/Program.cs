@@ -19,7 +19,7 @@ namespace NPercept.App
 				documents_list.Add (sentence);
 				words = sentence.Split (' ');
 				foreach (string word in words) {
-					if (!words_list.Exists (word)) {
+					if (!words_list.Contains (word)) {
 						words_list.Add (word.Trim ());
 					}
 				}
