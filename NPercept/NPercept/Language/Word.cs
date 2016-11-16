@@ -1,6 +1,6 @@
 ﻿using NPercept.Language.French;
 using NPercept.Language.Stemmer;
-using NPercept.Language.Word;
+using NPercept.Language;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NPercept.Language.Word
+namespace NPercept.Language
 {
     public class Word
     {

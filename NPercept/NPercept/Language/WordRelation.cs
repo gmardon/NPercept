@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NPercept.Language.Word
+namespace NPercept.Language
 {
     [DataContract]
     public struct WordRelation

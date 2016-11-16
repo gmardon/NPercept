@@ -31,17 +31,12 @@
     <Reference Include="System" />
     <Reference Include="System.Xml.Serialization" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NPercept\Core\IO\RawObjectReader.cs" />
     <Compile Include="NPercept\Core\IO\RawObjectWriter.cs" />
-    <Compile Include="NPercept\Language\Document\Document.cs" />
-    <Compile Include="NPercept\Language\Document\DocumentRelation.cs" />
-    <Compile Include="NPercept\Language\Word\Register\BaseWordRegister.cs" />
-    <Compile Include="NPercept\Language\Word\Word.cs" />
-    <Compile Include="NPercept\Language\Word\WordRegister.cs" />
-    <Compile Include="NPercept\Language\Word\WordRelation.cs" />
     <Compile Include="NPercept\Language\Stemmer\Among.cs" />
     <Compile Include="NPercept\Language\Stemmer\CzechStemmer.cs" />
     <Compile Include="NPercept\Language\Stemmer\DanishStemmer.cs" />
@@ -57,19 +52,24 @@
     <Compile Include="NPercept\Language\Stemmer\RussianStemmer.cs" />
     <Compile Include="NPercept\Language\Stemmer\SpanishStemmer.cs" />
     <Compile Include="NPercept\Language\Stemmer\StemmerOperations.cs" />
-    <Compile Include="NPercept\Language\Document\Sentence.cs" />
     <Compile Include="NPercept\Language\Languages.cs" />
     <Compile Include="NPercept\Language\French\FrenchStemmer.cs" />
     <Compile Include="NPercept\Language\English\EnglishStemmer.cs" />
     <Compile Include="NPercept\Language\WordSeparationMode.cs" />
     <Compile Include="NPercept\Language\TextSeparationMode.cs" />
+    <Compile Include="NPercept\Language\Register\BaseWordRegister.cs" />
+    <Compile Include="NPercept\Language\Word.cs" />
+    <Compile Include="NPercept\Language\WordRegister.cs" />
+    <Compile Include="NPercept\Language\WordRelation.cs" />
+    <Compile Include="NPercept\Language\Document.cs" />
+    <Compile Include="NPercept\Language\DocumentRelation.cs" />
+    <Compile Include="NPercept\Language\Sentence.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="NPercept\" />
     <Folder Include="NPercept\Core\" />
     <Folder Include="NPercept\Language\" />
-    <Folder Include="NPercept\Language\Document\" />
-    <Folder Include="NPercept\Language\Word\" />
+    <Folder Include="NPercept\Language\Register\" />
   </ItemGroup>
 </Project>

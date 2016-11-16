@@ -4,7 +4,7 @@ namespace NPercept.Language
 {
 	public enum TextSeparationMode
 	{
-		Dot = "."
+		Dot = '.'
 	}
 }
 

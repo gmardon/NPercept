@@ -6,7 +6,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
-using NPercept.Lang;
+using NPercept.Language;
 
 namespace NPercept.Language.Document
 {
@@ -36,7 +36,7 @@ namespace NPercept.Language.Document
             switch (a_mode)
             {
                 case WordSeparationMode.Space:
-                    return a_sentence.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries).Select((s) => new Word(s)).ToArray();
+				return a_sentence.Split(new string[] { WordSeparationMode.Space }, StringSplitOptions.RemoveEmptyEntries).Select((s) => new Word(s)).ToArray();
 
                 default:
                     throw new NotImplementedException();
@@ -48,7 +48,7 @@ namespace NPercept.Language.Document
             return FromText(a_text, TextSeparationMode.Dot);
         }
 
-        public static List<Sentence> FromText(string a_text, TextSeparationMode a_mode)
+		public static List<Sentence> FromText(string a_text, TextSeparationMode a_mode)
         {
             switch (a_mode)
             {
