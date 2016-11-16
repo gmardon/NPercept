@@ -7,6 +7,6 @@
 /home/gmardon/Projects/NPercept/NPercept.App/bin/Debug/AForge.Math.dll
 /home/gmardon/Projects/NPercept/NPercept.App/bin/Debug/AForge.Genetic.dll
 /home/gmardon/Projects/NPercept/NPercept.App/bin/Debug/AForge.Neuro.dll
-/home/gmardon/Projects/NPercept/NPercept.App/bin/Debug/NPercept.Core.dll
-/home/gmardon/Projects/NPercept/NPercept.App/bin/Debug/NPercept.Core.dll.mdb
 /home/gmardon/Projects/NPercept/NPercept.App/bin/Debug/MathNet.Numerics.dll
+/home/gmardon/Projects/NPercept/NPercept.App/bin/Debug/NPercept.Lang.dll
+/home/gmardon/Projects/NPercept/NPercept.App/bin/Debug/NPercept.Lang.dll.mdb

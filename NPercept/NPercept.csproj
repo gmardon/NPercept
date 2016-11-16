@@ -64,6 +64,8 @@
     <Compile Include="NPercept\Language\Document.cs" />
     <Compile Include="NPercept\Language\DocumentRelation.cs" />
     <Compile Include="NPercept\Language\Sentence.cs" />
+    <Compile Include="NPercept\Source\NPerceptSource.cs" />
+    <Compile Include="NPercept\Source\FileNPerceptSource.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -71,5 +73,6 @@
     <Folder Include="NPercept\Core\" />
     <Folder Include="NPercept\Language\" />
     <Folder Include="NPercept\Language\Register\" />
+    <Folder Include="NPercept\Source\" />
   </ItemGroup>
 </Project>

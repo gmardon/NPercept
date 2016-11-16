@@ -1,12 +1,11 @@
 ﻿using NPercept.Language;
-using NPercept.Language.Document;
+using NPercept.Language;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
-using NPercept.Language;
 
 namespace NPercept.Language.Document
 {
@@ -36,7 +35,7 @@ namespace NPercept.Language.Document
             switch (a_mode)
             {
                 case WordSeparationMode.Space:
-				return a_sentence.Split(new string[] { WordSeparationMode.Space }, StringSplitOptions.RemoveEmptyEntries).Select((s) => new Word(s)).ToArray();
+				return a_sentence.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries).Select((s) => new Word(s)).ToArray();
 
                 default:
                     throw new NotImplementedException();

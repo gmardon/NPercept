@@ -66,6 +66,11 @@ namespace NPercept.Language
             this.m_uid = a_uid;
         }
 
+		public Word(string a_text)
+		{
+			this.m_text = a_text;
+		}
+
         public Word(long a_uid, string a_text, string a_root) : this(a_uid)
         {
             this.m_text = a_text;

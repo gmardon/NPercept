@@ -1,30 +1,14 @@
-﻿<Properties StartupConfiguration="{7888610E-2403-4F45-B971-1864291E5361}|Default">
+﻿<Properties StartupItem="NPercept.App/NPercept.App.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NPercept/NPercept/Source/FileNPerceptSource.cs">
+    <Files>
+      <File FileName="NPercept.App/Program.cs" Line="2" Column="16" />
+      <File FileName="NPercept/NPercept/Source/NPerceptSource.cs" Line="8" Column="3" />
+      <File FileName="NPercept/NPercept/Source/FileNPerceptSource.cs" Line="11" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="NPercept\NPercept\Core\IO\RawObjectWriter.cs">
-    <Files>
-      <File FileName="NPercept.App\Program.cs" Line="37" Column="6" />
-      <File FileName="NPercept\NPercept\Language\Languages.cs" Line="21" Column="18" />
-      <File FileName="NPercept\NPercept\Language\TextSeparationMode.cs" Line="7" Column="30" />
-      <File FileName="NPercept\NPercept\Language\Word.cs" Line="3" Column="24" />
-      <File FileName="NPercept\NPercept\Language\WordRegister.cs" Line="8" Column="28" />
-      <File FileName="NPercept\NPercept\Language\WordRelation.cs" Line="8" Column="28" />
-      <File FileName="NPercept\NPercept\Language\Document.cs" Line="13" Column="24" />
-      <File FileName="NPercept\NPercept\Language\Register\BaseWordRegister.cs" Line="15" Column="36" />
-      <File FileName="NPercept\NPercept\Language\Sentence.cs" Line="9" Column="24" />
-      <File FileName="NPercept\NPercept\Language\WordSeparationMode.cs" Line="7" Column="3" />
-      <File FileName="NPercept\NPercept\Language\English\EnglishStemmer.cs" Line="73" Column="9" />
-      <File FileName="NPercept\NPercept\Language\Stemmer\DutchStemmer.cs" Line="72" Column="9" />
-      <File FileName="NPercept\NPercept\Language\Stemmer\GermanStemmer.cs" Line="1" Column="1" />
-      <File FileName="NPercept\NPercept\Language\Stemmer\CzechStemmer.cs" Line="15" Column="60" />
-      <File FileName="NPercept\NPercept\Language\Stemmer\IStemmer.cs" Line="1" Column="1" />
-      <File FileName="NPercept\NPercept\Language\Stemmer\ItalianStemmer.cs" Line="165" Column="9" />
-      <File FileName="NPercept\NPercept\Language\French\FrenchStemmer.cs" Line="1763" Column="1" />
-      <File FileName="NPercept\NPercept\Core\IO\RawObjectWriter.cs" Line="25" Column="10" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.NPercept.App PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

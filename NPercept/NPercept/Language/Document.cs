@@ -12,7 +12,7 @@ using NPercept.Language.English;
 using System.Diagnostics;
 using NPercept.Language;
 
-namespace NPercept.Language.Document
+namespace NPercept.Language
 {
     [DataContract]
     public class Document

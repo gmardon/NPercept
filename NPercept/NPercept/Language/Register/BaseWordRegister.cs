@@ -1,5 +1,5 @@
 ﻿using NPercept.Language.Stemmer;
-using NPercept.Language.Document;
+using NPercept.Language;
 using System;
 using System.Collections.Generic;
 using System.Linq;
