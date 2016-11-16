@@ -14,100 +14,128 @@ using NPercept.Language;
 
 namespace NPercept.Language
 {
-    [DataContract]
-    public class Document
-    {
-        protected static Regex WORD_REGEX = new Regex("([ \\t{}():;. \n])");
-        protected IStemmer m_stemmer;
+	[DataContract]
+	public class Document
+	{
+		protected static Regex WORD_REGEX = new Regex ("([ \\t{}():;. \n])");
+		protected IStemmer m_stemmer;
 
-        [DataMember]
-        protected LinkedList<Word> m_words;
+		[DataMember]
+		protected LinkedList<Word> m_words;
 
-        [DataMember]
-        protected string m_text;
+		[DataMember]
+		protected string m_text;
 
-        public Document(string a_text, ref Dictionary<long, Word> a_words, WordRegister a_register, Languages a_lang = Languages.English)
-        {
-            this.m_stemmer = GetStemmerByLanguage(a_lang);
-            this.m_text = a_text;
-            this.m_words = new LinkedList<Word>();
+		public Document (string a_text, WordRegister a_register, Languages a_lang = Languages.English)
+		{
+			this.m_stemmer = GetStemmerByLanguage (a_lang);
+			this.m_text = a_text;
+			this.m_words = new LinkedList<Word> ();
 
-            string[] words = WORD_REGEX.Split(a_text);
+			string[] words = WORD_REGEX.Split (a_text);
 
-            char[] bothSidesTrimChar = { '\'', '«', '»', '<', '>', '/', ':', ';', '"', '{', '}', '|', '\\', '[', ']', '.', ',', '~', '`', '!', '?', '@', '#', '%', '^', '&', '*', '(', ')', '_', '-', '+', '=' };
-            char[] endTrimChar = { '$' };
-           // Parallel.For(0, words.Length, (i) =>
-           // {
-                 for (int i = 0; i < words.Length; i++)
-                {
-                MatchCollection match = WORD_REGEX.Matches(words[i]);
-                if (match.Count <= 0 && words[i].Trim().Length > 0)
-                {
-                    string word = (words[i]);
-                    word = word.Trim();
-                    word = word.Trim(bothSidesTrimChar);
-                    word = word.TrimEnd(endTrimChar);
+			char[] bothSidesTrimChar = {
+				'\'',
+				'«',
+				'»',
+				'<',
+				'>',
+				'/',
+				':',
+				';',
+				'"',
+				'{',
+				'}',
+				'|',
+				'\\',
+				'[',
+				']',
+				'.',
+				',',
+				'~',
+				'`',
+				'!',
+				'?',
+				'@',
+				'#',
+				'%',
+				'^',
+				'&',
+				'*',
+				'(',
+				')',
+				'_',
+				'-',
+				'+',
+				'='
+			};
+			char[] endTrimChar = { '$' };
+			for (int i = 0; i < words.Length; i++) {
+				MatchCollection match = WORD_REGEX.Matches (words [i]);
+				if (match.Count <= 0 && words [i].Trim ().Length > 0) {
+					string word = (words [i]);
+					word = word.Trim ();
+					word = word.Trim (bothSidesTrimChar);
+					word = word.TrimEnd (endTrimChar);
+					word = word.Trim ();
 
-                    m_words.AddLast(a_register.Register(word, m_stemmer));
-                    Console.WriteLine(i + "/" + words.Length + " : " + word);
-                }
+					if (word != "")
+						m_words.AddLast (a_register.Register (word, m_stemmer));
+					
+					Console.WriteLine (i + "/" + words.Length + " : " + word);
+				}
 
-                 }
-            //});
-        }
+			}
 
-        public LinkedList<Word> Words
-        {
-            get
-            {
-                return m_words;
-            }
-        }
+		}
 
-        public string Text
-        {
-            get
-            {
-                return m_text;
-            }
-        }
+		public LinkedList<Word> Words {
+			get {
+				return m_words;
+			}
+		}
 
-        private static IStemmer GetStemmerByLanguage(Languages language)
-        {
-            switch (language)
-            {
-                case Languages.Czech:
-                    break;
-                case Languages.English:
-                    return new EnglishStemmer();
-                case Languages.French:
-                    return new FrenchStemmer();
-                case Languages.Dutch:
-                    break;
-                case Languages.Danish:
-                    break;
-                case Languages.Finnish:
-                    break;
-                case Languages.German:
-                    break;
-                case Languages.Spanish:
-                    break;
-                case Languages.Italian:
-                    break;
-                case Languages.Norwegian:
-                    break;
-                case Languages.Portugal:
-                    break;
-                case Languages.Russian:
-                    break;
-                case Languages.Hyngarian:
-                    break;
-                case Languages.Romanian:
-                    break;
-                default:
-                    break;
-            }
-            return null;
-        }
-    }
+		public string Text {
+			get {
+				return m_text;
+			}
+		}
+
+		private static IStemmer GetStemmerByLanguage (Languages language)
+		{
+			switch (language) {
+			case Languages.Czech:
+				break;
+			case Languages.English:
+				return new EnglishStemmer ();
+			case Languages.French:
+				return new FrenchStemmer ();
+			case Languages.Dutch:
+				break;
+			case Languages.Danish:
+				break;
+			case Languages.Finnish:
+				break;
+			case Languages.German:
+				break;
+			case Languages.Spanish:
+				break;
+			case Languages.Italian:
+				break;
+			case Languages.Norwegian:
+				break;
+			case Languages.Portugal:
+				break;
+			case Languages.Russian:
+				break;
+			case Languages.Hyngarian:
+				break;
+			case Languages.Romanian:
+				break;
+			default:
+				break;
+			}
+			return null;
+		}
+	}
 }

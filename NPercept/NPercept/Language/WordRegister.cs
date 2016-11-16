@@ -10,5 +10,6 @@ namespace NPercept.Language
     public interface WordRegister
     {
         Word Register(string a_text, IStemmer a_stemmer);
+		LinkedList<Word> Words { get; }
     }
 }

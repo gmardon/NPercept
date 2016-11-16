@@ -38,7 +38,8 @@ namespace NPercept.App
 
 			//
 
-			new NPerceptSource ();
+			FileNPerceptSource source = new FileNPerceptSource ();
+			source.Process(new string[] { "hugo_les_miserables.txt" });
 		}
 	}
 }

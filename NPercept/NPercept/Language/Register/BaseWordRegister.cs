@@ -5,14 +5,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NPercept.Language;
 
 namespace NPercept.Language
 {
     public class BaseWordRegister : WordRegister
     {
-        protected Dictionary<long, Word> m_words;
-        private int m_actualId = 0;
+		private int m_actualId = 0;
+
+		protected Dictionary<long, Word> m_words;
+
+		public LinkedList<Word> Words {
+			get {
+				return m_words.Values;
+			}
+		}
 
         public BaseWordRegister()
         {
