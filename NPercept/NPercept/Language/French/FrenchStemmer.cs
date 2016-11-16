@@ -1,4 +1,4 @@
-using Synatic.Lang.Stemmer;
+using NPercept.Language.Stemmer;
 /*
  *  Port of Snowball stemmers on C#
  *  Original stemmers can be found on http://snowball.tartarus.org
@@ -10,7 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Synatic.Lang.French
+namespace NPercept.Language.French
 {
     public class FrenchStemmer : StemmerOperations, IStemmer
     {

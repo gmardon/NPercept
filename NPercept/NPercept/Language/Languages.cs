@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NPercept.Lang.Data
+namespace NPercept.Language
 {
     public enum Languages
     {

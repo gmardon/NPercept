@@ -9,7 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NPercept.Lang.Stemmer
+namespace NPercept.Language.Stemmer
 {
     public class SpanishStemmer : StemmerOperations, IStemmer
     {

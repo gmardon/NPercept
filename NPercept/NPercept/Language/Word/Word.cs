@@ -1,6 +1,6 @@
-﻿using Synatic.Base.Synatic.Base;
-using Synatic.Lang.French;
-using Synatic.Lang.Stemmer;
+﻿using NPercept.Language.French;
+using NPercept.Language.Stemmer;
+using NPercept.Language.Word;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Synatic.Base
+namespace NPercept.Language.Word
 {
     public class Word
     {

@@ -1,4 +1,5 @@
-﻿using Synatic.Data.Language;
+﻿using NPercept.Language;
+using NPercept.Language.Document;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Synatic.Data
+namespace NPercept.Language.Document
 {
     [DataContract]
     public class Sentence

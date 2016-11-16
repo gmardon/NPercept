@@ -1,11 +1,13 @@
-﻿using Synatic.Lang.Stemmer;
+﻿using NPercept.Language.Stemmer;
+using NPercept.Language.Document;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NPercept.Language.Word;
 
-namespace NPercept.Lang.Word.Register
+namespace NPercept.Language.Word.Register
 {
     public class BaseWordRegister : WordRegister
     {

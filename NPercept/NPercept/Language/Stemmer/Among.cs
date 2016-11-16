@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Synatic.Lang.Stemmer
+namespace NPercept.Language.Stemmer
 {
     internal class Among
     {

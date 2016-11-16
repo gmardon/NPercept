@@ -1,11 +1,11 @@
-﻿using Synatic.Lang.Stemmer;
+﻿using NPercept.Language.Stemmer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NPercept.Lang.Word
+namespace NPercept.Language.Word
 {
     public interface WordRegister
     {

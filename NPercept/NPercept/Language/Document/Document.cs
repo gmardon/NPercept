@@ -6,13 +6,12 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Synatic.Base;
-using Synatic.Lang.Stemmer;
-using NPercept.Lang.Data;
-using Synatic.Lang.French;
-using Synatic.Lang.English;
-using Synatic.Base.Synatic.Base;
+using NPercept.Language.Stemmer;
+using NPercept.Language;
+using NPercept.Language.French;
+using NPercept.Language.English;
 using System.Diagnostics;
+using NPercept.Language.Word;
 
 namespace NPercept.Lang.Document
 {

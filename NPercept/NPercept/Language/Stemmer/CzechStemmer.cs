@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Globalization;
 
-namespace Synatic.Lang.Stemmer
+namespace NPercept.Language.Stemmer
 {
     public class CzechStemmer : StemmerOperations, IStemmer
     {

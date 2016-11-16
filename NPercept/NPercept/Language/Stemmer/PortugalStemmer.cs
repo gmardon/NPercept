@@ -8,6 +8,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using NPercept.Language.Stemmer;
 
 namespace Synatic.Lang.Stemmer
 {
