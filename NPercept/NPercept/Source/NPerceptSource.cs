@@ -43,7 +43,5 @@ namespace NPercept.Source
 			m_words = new Dictionary<long, Word>();
 			m_wordRegister = new BaseWordRegister();
 		}
-
 	}
 }
-
