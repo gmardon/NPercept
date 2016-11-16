@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPercept.App", "NPercept.App\NPercept.App.csproj", "{7888610E-2403-4F45-B971-1864291E5361}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPercept", "NPercept.Lang\NPercept.csproj", "{588535CE-13E0-46DD-9F76-C52D0F999E0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPercept", "NPercept\NPercept.csproj", "{588535CE-13E0-46DD-9F76-C52D0F999E0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

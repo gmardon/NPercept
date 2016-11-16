@@ -55,4 +55,10 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NPercept\NPercept.csproj">
+      <Project>{588535CE-13E0-46DD-9F76-C52D0F999E0D}</Project>
+      <Name>NPercept</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
